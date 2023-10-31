@@ -1,3 +1,11 @@
+apt install -y apt-transport-https ca-certificates curl software-properties-common
+apt update
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
+apt-cache policy docker-ce
+
+
+sudo apt install docker-ce
+
 nano docker-compose.yml
 version: '3'
 
