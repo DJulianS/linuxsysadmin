@@ -9,6 +9,9 @@ apt-cache policy docker-ce
 
 sudo apt install docker-ce
 
+mkdir wordpress
+cd wordpress
+touch docker-compose.yml
 nano docker-compose.yml
 version: '3'
 
@@ -39,7 +42,9 @@ docker tag wordpress localhost:5000/wordpress
 docker push localhost:5000/wordpress
 
 
-
+mkdir wordpressregistry
+cd wordpressregistry
+touch docker-compose-registry.yml
 nano docker-compose-registry.yml
 version: '3'
 
